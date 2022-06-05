@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body onload="showAlert()">
+    <p class="audio">🎶 Click icon in top left corner to play audio.</p>
     <div class="box">
         <header>
             <img src="logo.png" class="logo" alt="business logo" width="100px" height="100px">
@@ -36,6 +37,7 @@
                 </div>
             </nav>
         </header>
+        
         <main>
             <div class="hero">
                 <img src="fries.png" class="fries" alt="hambuger image">
@@ -53,21 +55,21 @@
             <div class="card">
                 <img src="curly.jpg" class="one" onmouseover="showCaption()" alt="">
                 <h3>Curly Fries</h3>
-                <a href="www.google.com">
+                <a href="#">
                 <p class="curly">Who in the curl are you?</p>
             </a>
             </div>
             <div class="card">
                 <img src="waffle.jpg" class="two" onmouseover="showCaption()" alt="">
                 <h3>Waffle Fries</h3>
-                <a href="www.google.com">
+                <a href="#">
                     <p class="wavy">What's in your waffle?</p>
             </a>
             </div>
             <div class="card">
                 <img src="tots.jpg" class="three" onmouseover="showCaption()" alt="">
                 <h3>Tater Tots</h3>
-                <a href="www.google.com">
+                <a href="#">
                 <p class="tots">Tot you didn't care.</p>
             </a>
             </div>
@@ -79,7 +81,7 @@
         <h1>Customers Love US ♥</h1>
     <div class="review a">
         <p class="white">"I love Fast Fries!</p>
-        <p>Sylvester Enzio Stallone, American Actor</p>
+        <p>Sylvester Millione, American Actor</p>
     </div>
 
     <div class="review">
@@ -94,12 +96,16 @@
 
     <div class="review">
         <p class="white">"I love Fast Fries!</p>
-        <p>Steven Williams, President of Frito-Lay</p>
+        <p>Steve Eves, President of Frito-Bay</p>
+    </div>
     </div>
 
-    </div>
     <footer>
-        🍟 Fast Fries. July 04, 2022. ©
+        <p>
+            🍟 Fast Fries. Created July 04, 2022 by Ana. ©<br>
+        Images belong to respective owner, do not belong to me, and were used for learning purposes. Customer names are fictional.
+        </p>
+        
         <script src="app.js"></script>
     </footer>
 

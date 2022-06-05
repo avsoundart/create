@@ -4,6 +4,13 @@
         display: none;
     }
 }
+.audio {
+    text-align: center;
+    background-color: white;
+    margin: 0;
+    padding: 1rem;
+}
+
 .quote {
     text-align: center;
     display: block;
@@ -146,6 +153,9 @@ h3, .card p {
     margin: 0;
     font-size: 1.1rem;
     letter-spacing: 2px;
+}
+.card p {
+    font-size: small;
 }
 h3 {
     background-color: white;
