@@ -1,0 +1,51 @@
+body {
+    padding: 2rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.playBtn {
+    margin: 0 auto;
+    background-color: blue;
+    color: white;
+}
+.gold {
+    border: 2px solid gold;
+}
+.roll {
+    background-color: green;
+    color: white;
+}
+.roll:hover, .playBtn:hover {
+    border: 2px solid white;
+}
+.result {
+    font-size: 2rem;
+    padding: 2rem;
+}
+.guess {
+    width: 8rem;
+}
+.plays {
+    padding: 2rem;
+}
+.changeRed {
+    color: red;
+}
+.changeGreen {
+    color: lime;
+}
+hr {
+    margin: 3rem 0;
+}
+div {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 1rem;
+    text-align: left;
+}
+ul, li {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 10px;
+}
