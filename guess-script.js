@@ -9,13 +9,14 @@ let randomNumber = Math.trunc(Math.random() * 10) + 1;
 let win = new Audio('chimes.mp3');
 let musicBtn = document.querySelector(".musicB"); //Audio Button
 let musicB = new Audio('beat.mp3');
+let musicStop = document.querySelector(".musicS"); //Stop Audio Button
 
-function playAudio() {
-    musicBtn.addEventListener('click', function () {
-        musicB.play();
-    });
-}
-playAudio();
+musicBtn.addEventListener('click', function () {
+    musicB.play();
+});
+musicStop.addEventListener('click', function () {
+    musicB.pause();
+});
 
 // Result for Guessed Number
 function greenColors() {
@@ -70,7 +71,6 @@ roll.addEventListener("click", function () {
     reset.addEventListener("click", function () {
         window.location.reload();
         reset.classList.remove("gold");
-
     });
 
 });
