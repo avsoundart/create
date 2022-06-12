@@ -7,6 +7,15 @@ let playAgain = document.querySelector(".playBtn"); //Play Again
 let reset = document.querySelector(".reset"); //Reset
 let randomNumber = Math.trunc(Math.random() * 10) + 1;
 let win = new Audio('chimes.mp3');
+let musicBtn = document.querySelector(".musicB"); //Audio Button
+let musicB = new Audio('beat.mp3');
+
+function playAudio() {
+    musicBtn.addEventListener('click', function () {
+        musicB.play();
+    });
+}
+playAudio();
 
 // Result for Guessed Number
 function greenColors() {
