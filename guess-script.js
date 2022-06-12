@@ -28,7 +28,7 @@ function greenColors() {
 }
 // Result for Incorrect Number
 function redColors() {
-    numberSlot.textContent = `My number was ${randomNumber}!`;
+    numberSlot.textContent = `My number was ${randomNumber}`;
     numberSlot.classList.add("changeRed");
     gamePlays.textContent = `Game Plays ${gameScore--}`;
     playAgain.classList.add("gold");
