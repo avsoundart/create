@@ -42,7 +42,7 @@ function gameStuff() {
 }
 // Press Play Again Button
 function playAgainCode() {
-    guessNumber.value = " ";
+    guessNumber.value = "";
     numberSlot.textContent = "?";
     randomNumber = Math.trunc(Math.random() * 10) + 1;
     numberSlot.classList.remove("changeRed", "changeGreen");

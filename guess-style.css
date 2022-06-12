@@ -4,8 +4,17 @@ body {
     background-color: black;
     color: white;
 }
+.newLine {
+    display: inline-block;
+}
+button {
+    margin: .5rem auto;
+    display: inline;
+}
+.reset, .guess {
+    display: block;
+}
 .playBtn {
-    margin: 0 auto;
     background-color: blue;
     color: white;
 }
@@ -25,6 +34,7 @@ body {
 }
 .guess {
     width: 8rem;
+    margin: 0 auto;
 }
 .plays {
     padding: 2rem;
