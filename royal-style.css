@@ -1,0 +1,179 @@
+body {
+    background-image: url("casino.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+p {
+    margin: 0;
+}
+/** Div counter */
+.header {
+    padding: 1rem;
+    margin: 0;
+}
+img {
+    width: 6rem;
+    height: 6rem;
+    display: block;
+    margin: 0 auto;
+}
+/** Div key */
+.rules {
+    width: fit-content;
+    background-color: white;
+    text-align: center;
+    border: 2px solid black;
+    padding: 2px;
+}
+.rules:hover {
+    background-color: black;
+    color: white;
+}
+.bet {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.audioBtns {
+    text-align: right;
+}
+.play, .mute {
+    padding: 2px;
+    border: 2px solid black;
+}
+/** Div title */
+.title {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.title p {
+    margin: 0;
+}
+h1 {
+    margin-top: 0;
+}
+/** Div numbers */
+.numbers {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.numbersBet {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.slots {
+    background-color: rgb(128, 3, 3);
+    color: white;
+    font-size: x-large;
+    border: 1px solid gold;
+    padding: 1rem;
+}
+.slots:hover {
+    background-color: gold;
+    color: black;
+}
+.betBox {
+    padding: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+    background-color: gold;
+    font-size: xx-large;
+    font-weight: 600;
+    color: green;
+    border: 1px solid black;
+}
+.betBox:hover {
+    color: white;
+    background-color: green;
+}
+.player-picks {
+    color: black;
+}
+/** Div result */
+.result {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: center;
+    font-weight: 300;
+    background-color: rgb(128, 3, 3, .5);
+    color: white;
+}
+.result button {
+    font-weight: 600;
+    margin: 1rem;
+    padding: 10px;
+    font-size: large;
+    width: 200px;
+}
+.result p {
+    padding: 10px;
+    margin: 0;
+    font-weight: 700;
+    font-size: medium;
+    letter-spacing: 3px;
+}
+.roll {
+    background-color: green;
+}
+.playAgain {
+    background-color: purple;
+}
+.roll:hover, .playAgain:hover {
+    color: gold;
+}
+.hideRules {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+    position: absolute;
+    left: 2rem;
+    padding-right: 1rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+    visibility: hidden;
+}
+.close-rules {
+    margin-left: 90%;
+}
+
+.showRules {
+    visibility: visible;
+}
+.labels {
+    color: gold;
+    background-color: rgba(3, 3, 3, .5);
+    border: 1px solid black;
+    text-align: center;
+    padding: 1rem;
+}
+.clear {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0,0,0,.5); /* opacity in background only */
+}
+footer {
+    text-align: right;
+    padding: 1rem 10px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: gold;
+}
+hr {
+    margin: 0;
+}
