@@ -27,8 +27,8 @@ function symbol() {
 button.addEventListener('click', function () {
     const first = document.getElementById("first").value;
     const last = document.getElementById("last").value;
-    const newFirst = first.slice(0, 3).toLowerCase();
-    const newLast = last.slice(-3).toLowerCase();
+    const newFirst = first.slice(-2).toLowerCase();
+    const newLast = last.slice(0,3).toLowerCase();
 
     if (first.length < 2 || last.length < 2) {
         alert(`Enter at least two characters.`);
