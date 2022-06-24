@@ -11,7 +11,7 @@ function letters() {
 
     for (i = 0; i < newCA.length; i++) {
         i = Math.floor(Math.random() * 4) + 1;
-        return newCA[i].toUpperCase();
+        return newCA[i];
     }
 }
 function symbol() {
@@ -27,8 +27,8 @@ function symbol() {
 button.addEventListener('click', function () {
     const first = document.getElementById("first").value;
     const last = document.getElementById("last").value;
-    const newFirst = first.slice(0, 3).toUpperCase();
-    const newLast = last.slice(-3).toUpperCase();
+    const newFirst = first.slice(0, 3).toLowerCase();
+    const newLast = last.slice(-3).toLowerCase();
 
     if (first.length < 2 || last.length < 2) {
         alert(`Enter at least two characters.`);
@@ -36,8 +36,8 @@ button.addEventListener('click', function () {
         password.innerHTML = "######";
     }
     else {
-        username.innerHTML = `New username: $_${newFirst}${newLast}🏀${letters()}${passCode(10, 100)}`;
-        password.innerHTML = `New password: ${letters().toLowerCase()}🧸${passCode(1000, 10000)}_${newLast.toLowerCase()}${symbol()}`;
+        username.innerHTML = `New username: $_${newFirst}${newLast}${letters()}${passCode(10, 100)}`;
+        password.innerHTML = `New password: ${letters()}${passCode(1000, 10000)}${letters().toUpperCase()}${symbol()}`;
     }
 
     button.disabled = true;
