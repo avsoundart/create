@@ -37,7 +37,7 @@ button.addEventListener('click', function () {
     }
     else {
         username.innerHTML = `New username: $_${newFirst}${newLast}${letters()}${passCode(10, 100)}`;
-        password.innerHTML = `New password: ${letters()}${passCode(1000, 10000)}${letters().toUpperCase()}${symbol()}`;
+        password.innerHTML = `New password: ${letters()}${letters()}${letters()}${passCode(1000, 10000)}${symbol()}`;
     }
 
     button.disabled = true;
