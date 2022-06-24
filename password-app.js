@@ -27,7 +27,7 @@ function symbol() {
 button.addEventListener('click', function () {
     const first = document.getElementById("first").value;
     const last = document.getElementById("last").value;
-    const newFirst = first.slice(0,3).toUpperCase();
+    const newFirst = first.slice(0, 3).toUpperCase();
     const newLast = last.slice(-3).toUpperCase();
 
     if (first.length < 2 || last.length < 2) {
@@ -36,12 +36,11 @@ button.addEventListener('click', function () {
         password.innerHTML = "######";
     }
     else {
-        username.innerHTML = `New username: $_${newFirst}${newLast}${letters()}${passCode(10, 100)}`;
-        password.innerHTML = `New password: ${letters()}${passCode(1000, 10000)}${newLast}`;
+        username.innerHTML = `New username: $_${newFirst}${newLast}${letters()}${passCode(10, 100)}🍰`;
+        password.innerHTML = `New password: 🧸${letters().toLowerCase()}${passCode(1000, 10000)}_${newLast.toLowerCase()}${symbol()}`;
     }
 
     button.disabled = true;
-});
 
 
 
