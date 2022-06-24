@@ -41,6 +41,4 @@ button.addEventListener('click', function () {
     }
 
     button.disabled = true;
-
-
-
+});
