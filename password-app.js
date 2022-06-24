@@ -7,7 +7,7 @@ function passCode(min, max) {
 }
 
 function letters() {
-    const newCA = ['s', 'g', 'k', 'e', 'x'];
+    const newCA = ['s', 'w', 'k', 'e', 'x'];
 
     for (i = 0; i < newCA.length; i++) {
         i = Math.floor(Math.random() * 4) + 1;
@@ -28,7 +28,7 @@ button.addEventListener('click', function () {
     const first = document.getElementById("first").value;
     const last = document.getElementById("last").value;
     const newFirst = first.slice(0, 3).toLowerCase();
-    const newLast = last.slice(-3).toLowerCase();
+    const newLast = last.slice(-1).toUpperCase();
 
     if (first.length < 2 || last.length < 2) {
         alert(`Enter at least two characters.`);
@@ -37,7 +37,7 @@ button.addEventListener('click', function () {
     }
     else {
         username.innerHTML = `New username: ${first}${passCode(1000, 5000)}`;
-        password.innerHTML = `New password: ${letters()}${letters()}${letters().toUpperCase()}${passCode(1000, 10000)}${symbol()}`;
+        password.innerHTML = `New password: ${letters()}${letters()}${newLast}${passCode(1000, 10000)}${symbol()}`;
     }
 
     button.disabled = true;
