@@ -36,7 +36,7 @@ button.addEventListener('click', function () {
         password.innerHTML = "######";
     }
     else {
-        username.innerHTML = `New username: $${first}${passCode(1000, 5000)}`;
+        username.innerHTML = `New username: ${first}${passCode(1000, 5000)}`;
         password.innerHTML = `New password: ${letters()}${letters()}${letters().toUpperCase()}${passCode(1000, 10000)}${symbol()}`;
     }
 
