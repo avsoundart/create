@@ -28,7 +28,7 @@ button.addEventListener('click', function () {
     const first = document.getElementById("first").value;
     const last = document.getElementById("last").value;
     const newFirst = first.slice(0,3).toLowerCase();
-    const newLast = `${letters()}${last.slice(-3).toLowerCase()}`;
+    const newLast = last.slice(-3).toLowerCase()};
 
     if (first.length < 2 || last.length < 2) {
         alert(`Enter at least two characters.`);
@@ -36,7 +36,7 @@ button.addEventListener('click', function () {
         password.innerHTML = "######";
     }
     else {
-        username.innerHTML = `New username: $${newFirst}_${newLast}${passCode(10, 100)}`;
+        username.innerHTML = `New username: $${newFirst}${newLast}_${letters()}${passCode(10, 100)}`;
         password.innerHTML = `New password: ${letters()}${passCode(1000, 10000)}${newLast}${symbol()}`;
     }
 
